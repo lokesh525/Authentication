@@ -1,4 +1,5 @@
 import 'package:authentication_user/authService/authService.dart';
+import 'package:authentication_user/notes/notepage.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget{
@@ -19,16 +20,13 @@ class _ProfilePageState extends State<ProfilePage>{
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Main Page"),
+        // title: const Text("Main Page"),
         actions: [
           IconButton(onPressed: logout, icon: const Icon(Icons.logout))
         ],
       ),
-      body: Center(
-        child: Container(
+      body: NotePage(),
 
-        ),
-      )
     );
   }
 
